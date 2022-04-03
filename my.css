@@ -1,0 +1,36 @@
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+img{
+padding:5px;
+width:200px;
+align:right;
+}
+
+body{
+background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(bg.jpg);
+background-size:cover;
+
+}
+h1{
+color:rgb(160, 160, 160);
+font-family:garamond;
+scroll-snap-align:start;
+}
+th,td{
+padding:30px;
+border-spacing:50px;
+}
+a{
+color:#FFFFFF;
+text-decoration:none;
+font-weight:bold;
+font-family:sans-serif;
+}
+a:hover{
+color:blue;
+}
