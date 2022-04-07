@@ -36,7 +36,7 @@
                 <!--<button class="cn"><a href="#">JOIN US</a></button>-->
 
                 <div class="form">
-				<form class="form" name="myform" method="POST" action="connect.php" onsubmit="validateform()">
+				<form class="form1" name="myform" method="POST" action="connect.php" onsubmit="validateform()">
                     <h2>Login Here</h2>
                     <input type="email" name="email" id="email" placeholder="Enter Email Here">
                     <input type="password" name="password" id="password" placeholder="Enter Password Here" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="please provide a strong password with alphabet, numeric and symbol" required>
@@ -62,5 +62,29 @@
         </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	 <script>
+            function validateform(){  
+                
+                var email1=document.forms["myform"]["email"].value;
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(!mailformat.test(email1))
+                {
+                alert("â€œPlease provide valid email address!");
+               return false;
+                }
+              
+                var password1=document.forms["myform"]["password"].value;
+                let plength = password1.length;
+                if(plength<8){
+                alert("You have to provide 8-character password");
+                return false;
+                }
+               
+				return true;
+            }  
+            function validatenumber(){
+                
+            }
+	</script>
 </body>
 </html>
