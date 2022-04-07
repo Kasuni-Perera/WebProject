@@ -1,6 +1,7 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage Design</title>
     <link rel="stylesheet" href="Home.css">
 </head>
@@ -22,23 +23,23 @@
                 </ul>
             </div>
 
-            <div class="search">
+            <!--<div class="search">
                 <input class="srch" type="search" name="" placeholder="Type To text">
                 <a href="#"> <button class="btn">Search</button></a>
-            </div>
+            </div>-->
 
         </div> 
         <div class="content">
             <h1><br><br><br><br><span>𝕎𝕖 𝕊𝕖𝕝𝕝 𝕃𝕚𝕗𝕖𝕤𝕥𝕪𝕝𝕖.</span></h1>
             <p class="par">ᗩᒪᗯᗩƳᔕ ᗪᗴᒪIᐯᗴᖇ ᗰᗝᖇᗴ 丅ᕼᗩᑎ Ƴᗝᑌ ᗴ᙭ᑭᗴᑕ丅ᗴᗪ.</p>
 
-                <button class="cn"><a href="#">JOIN US</a></button>
+                <!--<button class="cn"><a href="#">JOIN US</a></button>-->
 
                 <div class="form">
-                    <form method ="post" action="connect.php" >
+				<form class="form" name="myform" method="POST" action="connect.php" onsubmit="validateform()">
                     <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="password" placeholder="Enter Password Here">
+                    <input type="email" name="email" id="email" placeholder="Enter Email Here">
+                    <input type="password" name="password" id="password" placeholder="Enter Password Here" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="please provide a strong password with alphabet, numeric and symbol" required>
                     <button class="btnn"><a href="#">Login</a></button>
                     </form>
                     <p class="link">
