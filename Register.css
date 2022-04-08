@@ -1,9 +1,26 @@
-
 *{
     margin: 0;
     padding: 0;
-   
 }
+.InnerBlock{
+    background-color:#FADBD8;
+    margin:5px 400px 30px 400px;
+    line-height: 2;
+    font-size:20px;
+
+    }
+    .container{
+        background-color:#D98880;
+        height:100%;
+        width:100%;
+    }
+
+    .centerButton{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
 
 .main{
     width: 100%;
@@ -13,9 +30,10 @@
     height: 100vh;
 }
 
+
 .navbar{
-    width: 80%;
-    height: 10%;
+    width: 1200px;
+    height: 75px;
     margin: auto;
 }
 
@@ -36,9 +54,9 @@
 }
 
 .menu{
-    width: 80%;
+    width: 600px;
     float: left;
-    height: 20%;
+    height: 70px;
 }
 
 ul{
@@ -50,9 +68,9 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 70px;
     margin-top: 27px;
-    font-size: 90%;
+    font-size: 16px;
 }
 
 ul li a{
@@ -60,34 +78,12 @@ ul li a{
     color: #fff;
     font-family: Arial;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
 }
 
 ul li a:hover{
     color: #ff7200;
 }
-/*
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
 
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid #ff7200;
-    margin-top: 13px;
-    color: #fff;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}*/
 
 .btn{
     width: 100px;
@@ -122,62 +118,18 @@ ul li a:hover{
     position: relative;
 }
 
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
 
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 10%;
-    letter-spacing: 2px;
-	color: #FF0004;
-}
-
-/*.content .cn{
-    width: 160px;
-    height: 40px;
-    background: #FF0004;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background-color: #fff;
-}*/
-
-.content span{
-    color: #ffffff;
-    font-size: 65px
-}
 
 .form{
     width: 24%;
-    height: 90%;
+    height: 60%;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%,-5%);
+    top: 20%;
+    left: 60%;
+    transform: translate(-80%,-10%);
     border-radius: 10px;
-    padding: 25px;
+    padding: 5%;
     content:center;
 }
 
@@ -242,18 +194,13 @@ ul li a:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
-    text-align: center;
 }
 .form .link a{
     text-decoration: none;
     color: #FF0004;
     
 }
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
+
 .icons a{
     text-decoration: none;
     color: #fff;
@@ -267,4 +214,61 @@ ul li a:hover{
 }
 .icons ion-icon:hover{
     color: #FF0004;
+}
+
+.slider-container{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 50%;
+}
+.images img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {
+	background: #fff;
+	}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
 }
