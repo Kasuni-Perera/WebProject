@@ -92,6 +92,7 @@ ul li a:hover{
     width: 100px;
     height: 40px;
     background: #FF0004;
+    opacity: 70%;
     border: 2px solid #FF0004;
     margin-top: 13px;
     color: #fff;
@@ -219,9 +220,8 @@ ul li a:hover{
 .btnn{
     width: 240px;
     height: 40px;
-    background: #FF0004;
+    background: lightgreen;
     border: none;
-    opacity: 70%;
     margin-top: 30px;
     font-size: 18px;
     border-radius: 10px;
@@ -270,7 +270,7 @@ ul li a:hover{
 }
 .column{
 	float: left;
-	width: 25%;
+	width: 50%;
 	}
 .row:after{
 	content: "";
@@ -287,11 +287,12 @@ ul li a:hover{
 	padding: 5px 10px;
 }
 .box{
-	background-color: rgba(255, 255, 255, 0.7);
-	width: 320px;
+	background-color: white;
+	opacity: 70%;
+	width: auto;
 	padding: 10px;
 	border: none;
-	margin: 0;
+	margin: 20px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
@@ -320,23 +321,10 @@ p.subtitle{
 	color: gray;
 	font-size: 20px
 }
-a{
+.a{
     font-family: Arial;
 	font-size:17px;
 	font-weight: bold;
 	color: #005EA6;
     text-decoration: none;
 }
-select {
-    width: 100%;
-    min-width: 15ch;
-    max-width: 30ch;
-    border: 1px solid var(4px);
-    border-radius: 0.25em;
-    padding: 0.25em 0.5em;
-    font-size: 17px;
-    cursor: pointer;
-    line-height: 1.1;
-    background-color: rgba(255, 255, 255, 0.207);
-    background-image: linear-gradient(to top, #f9f9f961, #fff 33%);
-  }
