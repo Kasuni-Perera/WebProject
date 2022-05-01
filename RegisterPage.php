@@ -15,9 +15,9 @@
             <div class="menu">
                 <ul>
                         <li><a href="Home.php">HOME</a></li>
-                        <li><a href="shoppage.html">SHOP</a></li>
-                        <li><a href="pro.html">PRODUCTS</a></li>
-                        <li><a href="ContactUs.html">CONTACT</a></li>
+                        <li><a href="shoppage.php">SHOP</a></li>
+                        <li><a href="pro.php">PRODUCTS</a></li>
+                        <li><a href="ContactUs.php">CONTACT</a></li>
 						<li><a href="Home.php" >Log out</a></li>
                 </ul>
             </div>
